@@ -1,0 +1,44 @@
+﻿<Window x:Class="CalendarV3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarV3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="calendarGrid" ShowGridLines="False">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Next" Grid.Column="4" Height="50" Width="50" Content="Next" FontSize=" 15" VerticalContentAlignment="Center" HorizontalAlignment="Center" Click="Next_Click" ></Button>
+        <Button x:Name="Back" Grid.Column="2" Height="50" Width="50" Content="Back" FontSize=" 15" VerticalContentAlignment="Center" HorizontalAlignment="Center" Click="Back_Click" ></Button>
+        <TextBlock Grid.Column="2" Grid.ColumnSpan="3" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"> Январь</TextBlock>
+        <TextBlock Grid.Row="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Monday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Tuesday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Wendnesday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Thursday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="4" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Friday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="5" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Seturday</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="6" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" >Sunday</TextBlock>
+
+
+    </Grid>
+</Window>
